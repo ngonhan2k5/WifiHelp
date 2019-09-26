@@ -23,6 +23,8 @@ namespace WifiHelp
 		public const string MyServiceName = "WifiHelp";
 		EventLog eventLog1;
 		Timer timer = new Timer();
+		const string LOG_SOURCE = "WifiHelp";
+		const string LOG_NAME = "Application";
 		
 		public WifiHelp()
 		{
@@ -31,13 +33,13 @@ namespace WifiHelp
 			Utils.parseArgs();
 			
 			eventLog1 = new System.Diagnostics.EventLog();
-			if (!System.Diagnostics.EventLog.SourceExists("MySource"))
+			if (!System.Diagnostics.EventLog.SourceExists(LOG_SOURCE))
 			{
 				System.Diagnostics.EventLog.CreateEventSource(
-					"MySource","MyNewLog");
+					LOG_SOURCE, LOG_NAME);
 			}
-			eventLog1.Source = "MySource";
-			eventLog1.Log = "MyNewLog";
+			eventLog1.Source = LOG_SOURCE;
+			eventLog1.Log = LOG_NAME;
 		}
 		
 		private void InitializeComponent()
