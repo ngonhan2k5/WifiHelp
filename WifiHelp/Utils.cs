@@ -25,16 +25,22 @@ namespace WifiHelp
 	/// </summary>
 	public class Utils
 	{
-		
+		private static int status = 0;
 		public static void autoReconnectWifi(string ssid, EventLog eventLog){
 			// current trouble wifi connected but no internet
 			if (Utils.isNetConnected() && !Utils.isConnectedToInternet("8.8.8.8")){
-				logEvent(Utils.reConnect(ssid, true), eventLog, 2);
+				status = 2;
+				logEvent(Utils.reConnect(ssid, true), eventLog, status);
 			// wifi disconnected
 			}else if (!Utils.isNetConnected()){
-				logEvent(Utils.reConnect(ssid), eventLog, 3);
+				status = 3;
+				logEvent(Utils.reConnect(ssid), eventLog, status);
 			}else{
-				eventLog.WriteEntry(String.Format("Internet access Ok", ssid), EventLogEntryType.Information, 1);
+				// only log once internet access success
+				if (status != 1){
+					status = 1;
+					eventLog.WriteEntry(String.Format("Internet access Ok", ssid), EventLogEntryType.Information, status);
+				}
 			}
 		}
 		

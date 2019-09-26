@@ -65,7 +65,7 @@ namespace WifiHelp
 			// TODO: Add start code here (if required) to start your service.
 			eventLog1.WriteEntry("In OnStart."+ String.Format("ssid={0} time={1}", Utils.param("ssid"), Utils.param("time")));
 			timer.Elapsed += new ElapsedEventHandler(OnTimer);
-			timer.Interval = 15000;//Utils.param("time", 15000); //number in milisecinds
+			timer.Interval = Utils.param("time", 10000); //number in milisecinds
 			timer.Enabled = true;
 		}
 		
