@@ -1,0 +1,2 @@
+SET SSID=12 Le Thanh Ton
+SET TICK=10000
