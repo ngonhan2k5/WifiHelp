@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+# SharpDevelop 3.2.1.6466
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WifiHelp", "WifiHelp\WifiHelp.csproj", "{5795D0E1-39BD-45F4-A5DC-BDD782915707}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManagedWifi", "ManagedWifi\ManagedWifi.csproj", "{6AA425C9-EA6A-4B01-AAED-5FF122E8B663}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5795D0E1-39BD-45F4-A5DC-BDD782915707}.Debug|x86.Build.0 = Debug|x86
+		{5795D0E1-39BD-45F4-A5DC-BDD782915707}.Debug|x86.ActiveCfg = Debug|x86
+		{5795D0E1-39BD-45F4-A5DC-BDD782915707}.Release|x86.Build.0 = Release|x86
+		{5795D0E1-39BD-45F4-A5DC-BDD782915707}.Release|x86.ActiveCfg = Release|x86
+		{6AA425C9-EA6A-4B01-AAED-5FF122E8B663}.Debug|x86.Build.0 = Debug|Any CPU
+		{6AA425C9-EA6A-4B01-AAED-5FF122E8B663}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{6AA425C9-EA6A-4B01-AAED-5FF122E8B663}.Release|x86.Build.0 = Release|Any CPU
+		{6AA425C9-EA6A-4B01-AAED-5FF122E8B663}.Release|x86.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+EndGlobal
