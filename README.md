@@ -10,3 +10,6 @@ If wifi still on but no internet access -> restart wifi with the same ssid.
 Set SSID and check interval TICK in config.cmd before run install.cmd
 
 * UNINSTALL SERVICE: run uninstall.cmd
+
+# Credit: 
+ManagedWifi : https://archive.codeplex.com/?p=managedwifi
