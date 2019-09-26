@@ -1,4 +1,4 @@
-# WifiHelp
+# WifiHelp Service
 Auto reconnect wifi when have no internet access (fix lost internet after resume from window sleep).
 Run as a service to allow working when not login yet.
 If wifi down -> turn on wifi ap that have ssid setup in config.cmd.
