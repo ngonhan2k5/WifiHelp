@@ -8,7 +8,7 @@
  */
 using System;
 using System.Text.RegularExpressions;
-using System.Management;
+//using System.Management;
 using System.Net.NetworkInformation;
 using System.Diagnostics;
 
