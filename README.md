@@ -1,5 +1,5 @@
-# WifiHelp - Wifi auto reconnect Service
-Auto reconnect wifi when have no internet access (fix lost internet after resume from window sleep).
+# WifiHelp - Wifi auto reconnect Window Service
+Auto reconnect wifi when have no internet access (fix lost internet after resumed a window sleep).
 Run as a service to allow working from login screen.
 If wifi down -> turn on wifi ap that have ssid setup in config.cmd.
 If wifi still on but no internet access -> restart wifi with the same ssid.
